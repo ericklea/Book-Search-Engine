@@ -2,6 +2,7 @@ const { AuthenticationError } = require('apollo-server-express');
 const { User } = require('../models');
 const { signToken } = require('../utils/auth');
 
+//Creat resolvers /functions that actually execute the query
 const resolvers = {
   Query: {
     me: async (parent, args, context) => {

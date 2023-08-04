@@ -1,5 +1,6 @@
 const { gql } = require('apollo-server-express');
 
+//Create typeDefs
 const typeDefs = gql`
   type User {
     _id: ID
